@@ -4,10 +4,38 @@ body{
 #wrapper {
     width: 960px;
     background-color: white;
+    border: medium white solid;
+}
+.border{
+    width: 300px;
     border: medium black solid;
+}
+.column {
+    float: left;
+    width: 50%;
 }
 
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.halfcolor{
+    background-color: black;
+    opacity: 0.7;
+    padding: 75px 0;
+    height: 404px;
+}
+
+#haveAdventure{
+    margin-left: 25px;
+    color: white;
+}
+
+h2{
+    padding-right: 40px;
+}
 
 .marginCenter {
     margin-right: auto;
@@ -27,6 +55,10 @@ body{
     float: left;
 }
 
+#logo{
+    height: 130px;
+}
+
 #top {
     height: 135px;
     line-height:135px;
@@ -34,22 +66,19 @@ body{
 }
 #main{
     margin-top: 31px;
+
 }
 
 
 #imagebk {
     background-image: url("../4x4-adventure-automobile-1571783.jpg");
-    background-size: contain;
+    /*background-size: contain;*/
     background-repeat:no-repeat;
-    height: 367px;
+    height: 554px;
     position: relative;
 }
 #bold{
     font-weight: bold;
-}
-#halfcolor{
-    background-color: black;
-
 }
 
 .clearMargin {
@@ -95,15 +124,69 @@ a:hover{
     text-align: right;
 }
 
-
-#panel1, #panel2, #panel3 {
-
-    width: 320px;
+#learnMore{
+    color: blue;
 }
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    width: 960px;
+}
+
 
 .alignRight {
     text-align: right;
 }
 .alignCenter{
     text-align: center;
+}
+.img {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    width: 300px;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+
+/*************************************** ABOUT **********************************/
+#wrapper{
+    width: auto;
+    padding: 15px;
+    border: black 1px solid;
+    border-radius: 0;
+}
+
+#mountainPic{
+    border: black 1px solid;
+}
+
+#content{
+    width: 600px;
+}
+
+#headingOne{
+    margin-left: 15px;
+}
+
+#loremIpsum{
+    margin-left: 25px;
+}
+
+#table{
+    margin-left: 250px;
+}
+
+#footerAbout{
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
 }
